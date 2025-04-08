@@ -1,0 +1,508 @@
+
+/* General Reset */
+.merchandise-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #379ab7, #ff7eb3) !important;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* --- Video Background Section --- */
+.vid-parent {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.vid-parent video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.vid-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.vid-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.vid-content .btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.vid-content .btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* --- Courses Section --- */
+.courses-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.courses-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.course-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-title {
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- Studio Section --- */
+.studio-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+}
+
+.studio-text {
+    flex: 1;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.studio-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.studio-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.studio-text .studio-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background:rgb(75, 177, 166);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.studio-text .studio-btn:hover {
+    background: #ff1a1a;
+}
+
+.studio-image {
+    flex: 1;
+    text-align: center;
+}
+
+.studio-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+}
+
+/* --- Merchandise Section --- */
+
+
+.merch-text {
+    flex: 1;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.merch-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.merch-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.merch-text .merch-btn {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background:rgb(112, 206, 200);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.merch-text .merch-btn:hover {
+    background: #ff1a1a;
+}
+
+.merch-image {
+    flex: 1;
+    text-align: center;
+}
+
+.merch-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+}
+
+/* --- Social Follow Section --- */
+.social-section {
+    background: linear-gradient(to right,rgb(90, 176, 213),rgb(110, 169, 195));
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+/* Merchandise Section */
+.merchandise-section {
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(135deg, #ff758c, #ff7eb3);
+padding: 80px 10%;
+flex-wrap: wrap;
+border-radius: 20px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+margin: 50px auto;
+max-width: 1200px;
+}
+
+/* Text Content */
+.merch-text {
+flex: 1;
+text-align: left;
+max-width: 500px;
+}
+
+.merch-text h1 {
+font-size: 3rem;
+font-weight: 700;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.merch-text p {
+font-size: 1.2rem;
+margin: 20px 0;
+color: #fff;
+line-height: 1.6;
+}
+
+/* Call-to-Action Button */
+.merch-btn {
+font-size: 1.2rem;
+padding: 14px 28px;
+border-radius: 50px;
+background: #fff;
+color: #ff4d4d;
+text-decoration: none;
+font-weight: bold;
+display: inline-block;
+transition: all 0.3s ease-in-out;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.merch-btn:hover {
+background: #ff4d4d;
+color: #fff;
+transform: translateY(-3px);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Section */
+.merch-image {
+flex: 1;
+text-align: center;
+}
+
+.merch-image img {
+width: 100%;
+max-width: 450px;
+border-radius: 15px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease-in-out;
+}
+
+.merch-image img:hover {
+transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+.merchandise-section {
+flex-direction: column;
+text-align: center;
+padding: 60px 8%;
+}
+
+.merch-text {
+max-width: 100%;
+}
+
+.merch-btn {
+font-size: 1rem;
+padding: 12px 24px;
+}
+
+.merch-image img {
+max-width: 80%;
+}
+}
+
+/* Testimonials Section */
+#Feedback {
+background: linear-gradient(135deg, #4B7289, #2C3E50);
+padding: 80px 10%;
+text-align: center;
+color: white;
+}
+
+/* Section Heading */
+.testyheading {
+font-size: 2.8rem;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 40px;
+color: #fff;
+}
+
+/* Testimonial Slider */
+#testimonial-slider {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+/* Individual Testimonial */
+.testimonial {
+background: rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+padding: 25px;
+max-width: 400px;
+text-align: center;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease-in-out;
+position: relative;
+}
+
+.testimonial:hover {
+transform: translateY(-5px);
+}
+
+/* Testimonial Text */
+.testimonial .description {
+font-size: 1.2rem;
+font-style: italic;
+color: #f1f1f1;
+margin-bottom: 20px;
+}
+
+/* Student Image */
+.pic {
+width: 100px;
+height: 100px;
+margin: 0 auto 15px;
+overflow: hidden;
+border-radius: 50%;
+border: 4px solid #ffcd5d;
+transition: transform 0.3s;
+}
+
+.pic img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.testimonial:hover .pic {
+transform: scale(1.1);
+}
+
+/* Student Name & Occupation */
+.testimonial-prof h4 {
+font-size: 1.5rem;
+font-weight: bold;
+color: #ffcd5d;
+margin-bottom: 5px;
+}
+
+.testimonial-prof small {
+font-size: 1rem;
+font-style: italic;
+color: #f1f1f1;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+#Feedback {
+padding: 60px 5%;
+}
+
+.testimonial {
+max-width: 100%;
+}
+}
+
+ .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .address {
+            font-size: 18px;
+            margin: 20px 0;
+            color: #555;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: #ff5722;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .contact-btn:hover {
+            background: #e64a19;
+        }
+        .onground-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 10%;
+            background-color: #f5f5f5; /* Light background for contrast */
+        }
+        
+        .onground-content {
+            flex: 1;
+            padding-right: 40px; /* Space between text & image */
+        }
+        
+        .onground-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .onground-content p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .onground-content a {
+            display: inline-block;
+            background-color: #95c7ed;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        
+        .onground-image {
+            flex: -1;
+        }
+        
+        .onground-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .onground-content a:hover {
+            background-color: #c13a76;
+            transform: scale(1.05);
+        }
